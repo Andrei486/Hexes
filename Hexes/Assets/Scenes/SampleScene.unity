@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4508342285442185639, guid: e998141bc78471543822ed738d124f11, type: 3}
+      propertyPath: gridManager
+      value: 
+      objectReference: {fileID: 1973331567}
     m_RemovedComponents:
     - {fileID: 3842578719826236811, guid: e998141bc78471543822ed738d124f11, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e998141bc78471543822ed738d124f11, type: 3}
@@ -268,6 +272,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973331567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7655907818217731046, guid: 69a6bcd3b68cddc4fa52af4beb5a046f, type: 3}
+  m_PrefabInstance: {fileID: 7655907819064840084}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd86b7cff589bd64fa20603178a5f0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7655907819064840084
 PrefabInstance:
   m_ObjectHideFlags: 0

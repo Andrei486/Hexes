@@ -9,11 +9,13 @@ public class CursorController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     public GridSpace.SpaceOccupation Player {get; set;}
     private Vector3 movement;
+    [SerializeField] private GridManager gridManager;
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Started");
+        SwitchPlayer();
     }
 
     // Update is called once per frame
@@ -32,8 +34,8 @@ public class CursorController : MonoBehaviour
         Collider2D[] colliders = new Collider2D[1];
         ContactFilter2D filter = new ContactFilter2D();
         filter.useTriggers = true;
-        // LayerMask mask = LayerMask.NameToLayer("Grid");
-        // filter.SetLayerMask(mask);
+        LayerMask mask = Physics2D.GetLayerCollisionMask(LayerMask.NameToLayer("Grid"));
+        filter.SetLayerMask(mask);
         //return only one collider: cursor hitbox should be small enough that the space between hexes
         //guarantees that only one is selected at a time
         int resultCount = Physics2D.OverlapCollider(GetComponent<Collider2D>(), filter, colliders);
@@ -44,7 +46,7 @@ public class CursorController : MonoBehaviour
             if (selectedSpace.Occupation == GridSpace.SpaceOccupation.Free) {
                 selectedSpace.Occupation = Player;
                 SwitchPlayer();
-                GridManager.GetGridManager().ExpandGrid();
+                gridManager.ExpandGrid();
             }
         }
     }
@@ -53,5 +55,6 @@ public class CursorController : MonoBehaviour
         do {
             Player = Player.Next<GridSpace.SpaceOccupation>();
         } while (Player == GridSpace.SpaceOccupation.Free);
+        GetComponent<SpriteRenderer>().material = gridManager.GetTokenMaterial(Player);
     }
 }

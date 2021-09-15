@@ -49,6 +49,6 @@ MonoBehaviour:
   tokenPrefab: {fileID: 4267399990784201551, guid: 6a4cba63038840e4792fba7936192b5f, type: 3}
   tokenColors:
   - player: 1
-    material: {fileID: 2100000, guid: 59ae27bb997688f46bd4f549cc018e52, type: 2}
+    material: {fileID: 2100000, guid: 5809bfdfe0e037143a3b580343342557, type: 2}
   - player: 2
     material: {fileID: 2100000, guid: 8547054d2a64b2d419de29924b9dccc7, type: 2}

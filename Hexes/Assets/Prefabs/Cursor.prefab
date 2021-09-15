@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  gridManager: {fileID: 0}
 --- !u!114 &848422354260864286
 MonoBehaviour:
   m_ObjectHideFlags: 0

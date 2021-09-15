@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GridSpace : MonoBehaviour
 {
-    private Color deselectedColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+    private Color deselectedColor = new Color(0.3f, 0.3f, 0.3f, 1.0f);
     private Color selectedColor = new Color(1.0f, 0.7f, 0.0f, 1.0f);
     public enum SpaceOccupation {Free, Red, Blue}
 
@@ -37,7 +37,6 @@ public class GridSpace : MonoBehaviour
     private GameObject token = null;
     // Start is called before the first frame update
     void Start() {
-        
     }
     // Update is called once per frame
     void Update() {
@@ -62,5 +61,17 @@ public class GridSpace : MonoBehaviour
             }
         }
         return false;
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Player")) {
+            GetComponent<SpriteRenderer>().color = selectedColor;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Player")) {
+            GetComponent<SpriteRenderer>().color = deselectedColor;
+        }
     }
 }

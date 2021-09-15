@@ -40,7 +40,7 @@ public class GridManager : MonoBehaviour
         ExpandGrid();
     }
 
-    void ExpandGrid() {
+    public void ExpandGrid() {
         Vector2Int adjacentPosition;
         HashSet<Vector2Int> spacesToAdd = new HashSet<Vector2Int>();
         foreach (KeyValuePair<Vector2Int, GridSpace> entry in gridSpaces) {
@@ -70,7 +70,7 @@ public class GridManager : MonoBehaviour
         gridSpaces.Add(position, gridSpaceScript);
     }
 
-    void ShrinkGrid() {
+    public void ShrinkGrid() {
         Vector2Int adjacentPosition;
         GridSpace adjacentSpace;
         bool removeSpace;

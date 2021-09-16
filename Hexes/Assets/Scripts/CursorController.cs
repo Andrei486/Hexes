@@ -6,7 +6,7 @@ using Extensions;
 
 public class CursorController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
+    public static float MoveSpeed = 5.0f;
     public GridSpace.SpaceOccupation Player {get; set;}
     private Vector3 movement;
     [SerializeField] private GridManager gridManager;
@@ -25,7 +25,7 @@ public class CursorController : MonoBehaviour
     }
 
     public void OnMove(InputValue input) {
-        movement = input.Get<Vector2>() * moveSpeed;
+        movement = input.Get<Vector2>() * MoveSpeed;
     }
 
     public void OnSelect() {

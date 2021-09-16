@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Zoom",
+                    "name": "ZoomCamera",
                     "type": "Value",
                     "id": "d97fce0b-ee9b-46eb-a9ce-1166f154594f",
                     "expectedControlType": "Axis",
@@ -126,7 +126,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -137,7 +137,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -148,7 +148,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -159,7 +159,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

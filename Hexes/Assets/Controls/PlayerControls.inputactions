@@ -28,6 +28,14 @@
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "MoveCamera",
+                    "type": "Value",
+                    "id": "29b5145e-393d-4311-ab12-4fc14b619e69",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -120,19 +128,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "e842f3d3-12d6-4dda-b53e-97b0f9d8d17d",
-                    "path": "<Gamepad>/rightStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ZoomCamera",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "Keyboard",
-                    "id": "3769e901-2396-4efd-9af8-76051a897753",
+                    "id": "d23fcda5-f27c-49eb-b1e4-c81f435a94f2",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -143,7 +140,7 @@
                 },
                 {
                     "name": "negative",
-                    "id": "063726d2-4952-4ceb-ac24-4b99ca24c370",
+                    "id": "fd0f9ca7-8cac-4c16-9e29-cf9d6f6d7a83",
                     "path": "<Keyboard>/minus",
                     "interactions": "",
                     "processors": "",
@@ -154,12 +151,111 @@
                 },
                 {
                     "name": "positive",
-                    "id": "93712f33-f580-4058-b935-09d097bded30",
+                    "id": "7e93be79-2b28-47ba-98ab-ee4e117a5e70",
                     "path": "<Keyboard>/equals",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ZoomCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Gamepad",
+                    "id": "67164688-1a82-4244-adf9-c3fedacfcafd",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ZoomCamera",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "668ecdd7-67c8-44df-9780-0726e007bdd3",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ZoomCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "23720055-6025-49f4-bb45-a9d9e5ce0735",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ZoomCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "bd519a7a-0032-4f08-ae23-6250ca824c82",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Arrow Keys",
+                    "id": "f6e04233-9aae-4046-9b49-77fc9f619f8d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCamera",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "80737e73-ffa5-4b52-9813-1b9a14d9e821",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "e6f51c0e-a58c-4b91-87a9-0fb40ba18802",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "18ec4ffb-e3b3-4297-b54a-e0dd7bd8d343",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "3c7f7996-18af-42ab-945a-212c44fa94a0",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
